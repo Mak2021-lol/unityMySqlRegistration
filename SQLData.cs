@@ -3,11 +3,10 @@ using UnityEngine;
 
 public class SQLData
 {
-    private const string SQL_ip = "193.162.143.201";
-    private const string SQL_database_name = "databaseName";
-    private const string SQL_user_username = "USERNAME";
-    private const string SQL_user_password = "Password1!";
-    private const string DATABASE_players_tablename = "players";
+    private const string SQL_ip = "your host ip";
+    private const string SQL_database_name = "your database name";
+    private const string SQL_user_username = "your username";
+    private const string SQL_user_password = "your password";
     private const int DATABASE_players_nicknameLimit = 20;
     private string CONNECTION_string = $"server={SQL_ip};user={SQL_user_username};database={SQL_database_name};password={SQL_user_password}";
 
@@ -16,7 +15,7 @@ public class SQLData
     public string SQL_USER_USERNAME { get => SQL_user_username; }
     public string SQL_USER_PASSWORD { get => SQL_user_password; }
     public string DATABASE_PLAYERS_TABLENAME { get => DATABASE_players_tablename; }
-    public int DATABASE_PLAYERS_NICKNAMELIMIT {  get => DATABASE_players_nicknameLimit; }
+    public int DATABASE_PLAYERS_NICKNAMELIMIT { get => DATABASE_players_nicknameLimit; }
     public string DATABASE_CONNECTION_STRING { get => CONNECTION_string; }
 }
 
